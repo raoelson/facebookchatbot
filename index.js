@@ -33,9 +33,9 @@ app.listen(app.get('port'), function() {
 // End Point
 
 app.post('/webhook/', function (req, res) {
-   let messaging_events = req.body.entry[0].messaging
+    let messaging_events = req.body.entry[0].messaging_events
     for (i = 0; i < messaging_events.length; i++) {
-        event = req.body.entry[0].messaging[i]
+        event = req.body.entry[0].messaging_events[i]
         sender = event.sender.id
         if (event.message && event.message.text) {
             text = event.message.text
