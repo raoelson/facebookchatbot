@@ -88,21 +88,17 @@ function sendGenericMessage(sender) {
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "Si vous souhaitez suivre",
+                    "title": "Je taime larissa",
                     "subtitle": "social network",
-                    "image_url": "https://raw.githubusercontent.com/mlaidouni/FacebookBot/master/chatbot-facebook.jpg",
+                    "image_url": "https://pixabay.com/fr/enceintes-ventre-coeur-244662/",
                     "buttons": [{
                         "type": "web_url",
                         "url": "https://www.facebook.com/groups/1795624087378868/",
-                        "title": "FB Facebook Group"
+                        "title": "Eden Raoelson"
                     }, {
                         "type": "web_url",
                         "url": "https://www.youtube.com/channel/UCRV86HkxxSGI-whauOMkQdw",
-                        "title": "Me Suivre sur Youtube"
-                    },{
-                        "type": "web_url",
-                        "url": "https://twitter.com/elmehdimobi",
-                        "title": "Me Suivre sur Twitter"
+                        "title": "Eden Manasse"
                     }],
                 }, {
                     "title": "Choses à savoir créer un bot",
