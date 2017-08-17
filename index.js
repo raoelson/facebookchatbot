@@ -34,11 +34,11 @@ app.listen(app.get('port'), function() {
 
 app.post('/webhook/', function (req, res) {
     let messaging_events = req.body.entry[0].messaging_events
-    for (i = 0; i < messaging_events.length; i++) {
-        event = req.body.entry[0].messaging_events[i]
-        sender = event.sender.id
+    for (let i = 0; i < messaging_events.length; i++) {
+        let event = req.body.entry[0].messaging_events[i]
+        let sender = event.sender.id
         if (event.message && event.message.text) {
-            text = event.message.text
+            let text = event.message.text
             if (text === 'salut') {
                 sendGenericMessage(sender)
                 continue
@@ -59,7 +59,7 @@ var token = "EAAKEvlfZA46IBAIzfadyUalTuAIJlnAnTnNWBY9fbgMg9k8iEmYlAlryIj6XkADxZC
 // Echo back messages
 
 function sendTextMessage(sender, text) {
-    messageData = {
+   let messageData = {
         text:text
     }
     request({
