@@ -54,7 +54,7 @@ app.post('/webhook/', function (req, res) {
     res.sendStatus(200)
 })
 
-var token = "entrez votre token ici"
+var token = "EAAKEvlfZA46IBAIzfadyUalTuAIJlnAnTnNWBY9fbgMg9k8iEmYlAlryIj6XkADxZC5OS6hZAcUXLZCIp1J1Xasp0QvJharNJPolucciRQ0LX1PObeurrZAvGC1Y70dJtZCbAY4hjrTLkwrUIzBIlDm7M5mQkV7wFQfYTgyHkRHoVNBOmAiPZClXVDowVseNTMZD"
 
 // Echo back messages
 
