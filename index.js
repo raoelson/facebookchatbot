@@ -38,18 +38,23 @@ app.post('/webhook/', function (req, res) {
         let event = req.body.entry[0].messaging[i]
         let sender = event.sender.id
         if (event.message) {
-            let text = event.message.text   
-            let attachment = event.message.attachments         
+            let text = event.message.text                   
             if (text === 'Comment vas-tu?') {
                 sendTextMessage(sender, "Très bien et vous ?")
                 sendGenericMessage(sender)
                 continue
-            } 
-            
-
-            sendTextMessage(sender, " " +text.substring(0, 200))
-        }
-        
+            } else{
+                 let attachment = event.message.attachments
+                 if(attachment){
+                    if(attachment[0].type === 'image'){
+                        sendTextMessage(sender, "Je ne sais pas traiter ce type de demande" )
+                    }
+                 }                
+                 sendTextMessage(sender, "" +text.substring(0, 200))  
+               }                
+            }
+                        
+        }        
     }
     res.sendStatus(200)
 })
