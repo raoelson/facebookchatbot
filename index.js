@@ -46,9 +46,7 @@ app.post('/webhook/', function (req, res) {
                 continue
             }
 
-            if(attachment.type === 'image'){
-                sendTextMessage(sender, "Je ne sais pas traiter ce type de demande")
-            }
+            
             sendTextMessage(sender, "Bot: " + text.substring(0, 200))
         }
         
