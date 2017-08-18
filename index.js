@@ -88,21 +88,16 @@ function sendGenericMessage(sender) {
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "Choses à savoir créer un bot",
-                    "subtitle": "Quelques questions sur notre bot",
+                    "title": "",
                     "image_url": "https://raw.githubusercontent.com/mlaidouni/FacebookBot/master/facebook-chatbots.png",
                     "buttons": [{
                         "type": "postback",
-                        "title": "C’est quoi un bot Facebook?",
-                        "payload": "Un bot conversationnel, c’est un logiciel informatique qui réalise des conversations automatisées. Un bot Facebook, c’est la même chose, mais sur un certain réseau social",
+                        "title": "Je vais bien,merci",
+                        "payload": "",
                     },{
                         "type": "postback",
-                        "title": "Quelles sont les entreprises qui ont essayé les bots ?",
-                        "payload": "Il s’agit de CNN, qui vous envoie un briefing par message chaque matin, comme une newsletter, quoi. En France, il y a notamment Skyscanner, Voyages-Sncf et KLM.",
-                    }, {
-                        "type": "postback",
-                        "title": "Comment créer votre bot Facebook?",
-                        "payload": "Il existe deux façons pour créer un bot facebook, soit d'utiliser une plateforme sans codage ou le créer en codage",
+                        "title": "Non,ça ne va pas ",
+                        "payload": "",
                     }],
                 }]  
             } 
