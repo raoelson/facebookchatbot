@@ -39,12 +39,17 @@ app.post('/webhook/', function (req, res) {
         let sender = event.sender.id
         if (event.message && event.message.text) {
             let text = event.message.text
+            let attachment = event.message.attachments    
             if (text === 'Comment vas-tu?') {
                 sendTextMessage(sender, "Très bien et vous ?")
                 sendGenericMessage(sender)
                 continue
+            }else if(attachment === 'image'){
+                sendTextMessage(sender, "Je ne sais pas traiter ce type de demande")
+            }else{
+                sendTextMessage(sender, "Bot: " + text.substring(0, 200))
             }
-            sendTextMessage(sender, "Bot: " + text.substring(0, 200))
+            
         }
         
     }
