@@ -47,6 +47,7 @@ app.post('/webhook/', function (req, res) {
             } 
             if(attachment[0].type === 'image') {
                sendTextMessage(sender, "Je ne sais pas traiter ce type de demande") 
+               continue
             }
 
             sendTextMessage(sender, " " +text.substring(0, 200))
@@ -94,11 +95,11 @@ function sendGenericMessage(sender) {
                     "buttons": [{
                         "type": "postback",
                         "title": "Je vais bien,merci",
-                        "payload": "Node.js est une plateforme de développement Javascript. Ce n'est ni un serveur ,ni un Framework, c'est juste le langage Javascript avec des bibliothèques permettant de réaliser des actions comme écrire sur la sortie standard, ouvrir/fermer des connections réseaux ou encore créer un fichier.",
+                        "payload": "reponses",
                     },{
                         "type": "postback",
                         "title": "Non,ça ne va pas",
-                        "payload": "Heroku est une plateforme « Cloud » qui permet d’héberger, de développer tout type d’application. La plateforme appartient à Salesforce, gage de sécurité, de confidentialité et de haute performance.",
+                        "payload": "reponses",
                     }],
                 }]  
             } 
