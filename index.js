@@ -44,8 +44,9 @@ app.post('/webhook/', function (req, res) {
                 sendTextMessage(sender, "Très bien et vous ?")
                 sendGenericMessage(sender)
                 continue
-            }            
-            sendTextMessage(sender, "Bot: " + text.substring(0, 200))
+            }     
+                   
+            //sendTextMessage(sender, "Bot: " + text.substring(0, 200))
         }
         
     }
