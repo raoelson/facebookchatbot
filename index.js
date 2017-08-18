@@ -88,16 +88,13 @@ function sendGenericMessage(sender) {
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "",
-                    "image_url": "https://raw.githubusercontent.com/mlaidouni/FacebookBot/master/facebook-chatbots.png",
-                    "buttons": [{
                         "type": "postback",
                         "title": "Je vais bien,merci",
-                        "payload": "",
-                    },{
+                        "payload": "Il s’agit de CNN, qui vous envoie un briefing par message chaque matin, comme une newsletter, quoi. En France, il y a notamment Skyscanner, Voyages-Sncf et KLM.",
+                    }, {
                         "type": "postback",
                         "title": "Non,ça ne va pas ",
-                        "payload": "",
+                        "payload": "Il existe deux façons pour créer un bot facebook, soit d'utiliser une plateforme sans codage ou le créer en codage",
                     }],
                 }]  
             } 
