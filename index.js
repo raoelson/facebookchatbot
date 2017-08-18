@@ -95,8 +95,8 @@ function sendGenericMessage(sender) {
                         "type": "postback",
                         "title": "Non,ça ne va pas ",
                         "payload": "Il existe deux façons pour créer un bot facebook, soit d'utiliser une plateforme sans codage ou le créer en codage",
-                    }],
-                }]  
+                    }]
+                } 
             } 
         }
     
