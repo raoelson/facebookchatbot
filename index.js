@@ -45,11 +45,11 @@ app.post('/webhook/', function (req, res) {
                 sendGenericMessage(sender)
                 continue
             } 
-            if(attachment[0].type === 'image') {
+            /*if(attachment[0].type === 'image') {
                sendTextMessage(sender, "Je ne sais pas traiter ce type de demande") 
-            }
+            }*/
 
-            sendTextMessage(sender, "" + text.substring(0, 200))
+            sendTextMessage(sender, "" + attachment)
         }
         
     }
