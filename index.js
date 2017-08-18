@@ -93,16 +93,12 @@ function sendGenericMessage(sender) {
                     "image_url": "https://raw.githubusercontent.com/mlaidouni/FacebookBot/master/Facebook%20Messanger%20Bot.png",
                     "buttons": [{
                         "type": "postback",
-                        "title": "C'est quoi Node.js",
+                        "title": "Je vais bien,merci",
                         "payload": "Node.js est une plateforme de développement Javascript. Ce n'est ni un serveur ,ni un Framework, c'est juste le langage Javascript avec des bibliothèques permettant de réaliser des actions comme écrire sur la sortie standard, ouvrir/fermer des connections réseaux ou encore créer un fichier.",
                     },{
                         "type": "postback",
-                        "title": "C'est quoi Heroku",
+                        "title": "Non,ça ne va pas",
                         "payload": "Heroku est une plateforme « Cloud » qui permet d’héberger, de développer tout type d’application. La plateforme appartient à Salesforce, gage de sécurité, de confidentialité et de haute performance.",
-                    }, {
-                        "type": "postback",
-                        "title": "C'est quoi GitHub",
-                        "payload": "GitHub est un site où n’importe qui peut déposer son projet web. Qu'il s'agit de quelques lignes de code pour une page modeste, ou d’une grosse application, les amateurs et professionnels ouvrent des comptes sur GitHub pour soumettre leur travail à l’appréciation de tous.",
                     }],
                 }]  
             } 
