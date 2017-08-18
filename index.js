@@ -43,6 +43,14 @@ app.post('/webhook/', function (req, res) {
                 sendTextMessage(sender, "Très bien et vous ?")
                 sendGenericMessage(sender)
                 continue
+            }else{
+                 let attachment = event.message.attachments
+                 if(attachment){
+                    if(attachment[0].type === 'image'){
+                        sendTextMessage(sender, "Je ne sais pas traiter ce type de demande" )
+                    }
+                 }                
+                 sendTextMessage(sender, "" +text.substring(0, 200))  
             }                 
         }                    
     }            
