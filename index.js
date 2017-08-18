@@ -39,7 +39,7 @@ app.post('/webhook/', function (req, res) {
         let sender = event.sender.id
         if (event.message) {
             let text = event.message.text   
-            let attachment = event.message.attachment         
+            let attachment = event.message.attachments         
             if (text === 'Comment vas-tu?') {
                 sendTextMessage(sender, "Très bien et vous ?")
                 sendGenericMessage(sender)
@@ -49,7 +49,7 @@ app.post('/webhook/', function (req, res) {
                sendTextMessage(sender, "Je ne sais pas traiter ce type de demande") 
             }*/
 
-            sendTextMessage(sender, "" + attachment.type)
+            sendTextMessage(sender, "" + attachment[0].type)
         }
         
     }
