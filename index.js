@@ -89,6 +89,9 @@ function sendGenericMessage(sender) {
             "payload": {
                 "template_type": "generic",
                 "elements": [{
+                    "title": "Les outils nécessaires",
+                    "subtitle": "pour créer Facebook Messenger Bot",
+                    "image_url": "https://raw.githubusercontent.com/mlaidouni/FacebookBot/master/Facebook%20Messanger%20Bot.png",
                     "buttons": [{
                         "type": "postback",
                         "title": "Je vais bien,merci",
