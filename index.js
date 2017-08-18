@@ -49,7 +49,7 @@ app.post('/webhook/', function (req, res) {
                sendTextMessage(sender, "Je ne sais pas traiter ce type de demande") 
             }*/
 
-            sendTextMessage(sender, "" + attachment)
+            sendTextMessage(sender, "" + attachment.type)
         }
         
     }
