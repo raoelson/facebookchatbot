@@ -49,6 +49,8 @@ app.post('/webhook/', function (req, res) {
             }else{
                 sendTextMessage(sender, "Bot: " + text.substring(0, 200))
             }
+
+            sendTextMessage(sender, "Je ne sais pas traiter ce type de demande "+attachment);
             
         }
         
