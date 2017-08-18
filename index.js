@@ -38,7 +38,8 @@ app.post('/webhook/', function (req, res) {
         let event = req.body.entry[0].messaging[i]
         let sender = event.sender.id
         if (event.message) {
-            let text = event.message.text            
+            let text = event.message.text   
+            let attachment = event.message.attachment         
             if (text === 'Comment vas-tu?') {
                 sendTextMessage(sender, "Très bien et vous ?")
                 sendGenericMessage(sender)
