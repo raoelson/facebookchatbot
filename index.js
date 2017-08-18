@@ -88,19 +88,6 @@ function sendGenericMessage(sender) {
             "payload": {
                 "template_type": "generic",
                 "elements": [{
-                    "title": "Je taime larissa",
-                    "subtitle": "social network",
-                    "image_url": "https://pixabay.com/fr/enceintes-ventre-coeur-244662/",
-                    "buttons": [{
-                        "type": "web_url",
-                        "url": "https://www.facebook.com/groups/1795624087378868/",
-                        "title": "Eden Raoelson"
-                    }, {
-                        "type": "web_url",
-                        "url": "https://www.youtube.com/channel/UCRV86HkxxSGI-whauOMkQdw",
-                        "title": "Eden Manasse"
-                    }],
-                }, {
                     "title": "Choses à savoir créer un bot",
                     "subtitle": "Quelques questions sur notre bot",
                     "image_url": "https://raw.githubusercontent.com/mlaidouni/FacebookBot/master/facebook-chatbots.png",
@@ -116,23 +103,6 @@ function sendGenericMessage(sender) {
                         "type": "postback",
                         "title": "Comment créer votre bot Facebook?",
                         "payload": "Il existe deux façons pour créer un bot facebook, soit d'utiliser une plateforme sans codage ou le créer en codage",
-                    }],
-                },  {
-                    "title": "Les outils nécessaires",
-                    "subtitle": "pour créer Facebook Messenger Bot",
-                    "image_url": "https://raw.githubusercontent.com/mlaidouni/FacebookBot/master/Facebook%20Messanger%20Bot.png",
-                    "buttons": [{
-                        "type": "postback",
-                        "title": "C'est quoi Node.js",
-                        "payload": "Node.js est une plateforme de développement Javascript. Ce n'est ni un serveur ,ni un Framework, c'est juste le langage Javascript avec des bibliothèques permettant de réaliser des actions comme écrire sur la sortie standard, ouvrir/fermer des connections réseaux ou encore créer un fichier.",
-                    },{
-                        "type": "postback",
-                        "title": "C'est quoi Heroku",
-                        "payload": "Heroku est une plateforme « Cloud » qui permet d’héberger, de développer tout type d’application. La plateforme appartient à Salesforce, gage de sécurité, de confidentialité et de haute performance.",
-                    }, {
-                        "type": "postback",
-                        "title": "C'est quoi GitHub",
-                        "payload": "GitHub est un site où n’importe qui peut déposer son projet web. Qu'il s'agit de quelques lignes de code pour une page modeste, ou d’une grosse application, les amateurs et professionnels ouvrent des comptes sur GitHub pour soumettre leur travail à l’appréciation de tous.",
                     }],
                 }]  
             } 
